@@ -1,0 +1,300 @@
+              /*----------------------------------------------SECTION 1-------------------------------------------------------*/
+            *{ margin: 0; padding: 0;  box-sizing: border-box;}
+            body{  height: 7000px; font-family: Georgia, 'Times New Roman', Times, serif;}
+            .header{ width: 100%; height: 50px;  background-color: rgba(200, 193, 165, 0.838);
+            position: fixed; top: 0; font-size: large; }
+            .list { list-style: none;  float: right; margin-right: 95px; margin-top: 11px; }
+            .list li { display: inline-block; margin-left: 20px; color: rgb(54, 27, 116); }
+            .list li a{ text-decoration: none;  color: rgb(15, 15, 15);}
+            .ho{ text-decoration: underline; text-decoration-color: rgb(17, 75, 75); text-decoration-thickness: 2px;  }
+            .list-dropdown {  position: relative;  display: inline-block;}
+            .dropdown {   position: absolute; width: 150px; padding: 4px; background-color: #fff; text-align: center;
+                left: 0;  top: 150%;  visibility: hidden;  opacity: 0;  transition: opacity 0.5s;
+                z-index: 40;   border: 1px solid rgb(165, 104, 80); border-radius: 10px;  margin-bottom: 5px;  }
+            .dropdown li a {  color: rgb(174, 126, 103);  display: block;
+                padding: 20px 0px; text-align: center;   margin: 0; }
+            .list-dropdown:hover .dropdown {   visibility: visible;  opacity: 1;  }
+            .dropdown li { display: block; }
+            .img1{  width:120px ;   height: 60px; margin-left: 15px; float: left; margin-top: -10px;   }
+            .home{  position: relative;  width: 100%;  height:100vh ;  background-image: url(../images/backgroundswa.avif);
+            background-repeat: no-repeat;  background-size: cover;  background-attachment: fixed;  background-position: center;  }
+            .home-overlay{  position: absolute;  background-color: rgba(0,0,0,0.5);  width: 100%;  height:100%;  top: 0; left: 0;  }
+            .home-content{  width: 80%;  position: absolute;  top: 50%;
+            left: 50%; transform: translate( -50% , -50%  );  text-align: center; }
+            .home-title{  font-size: 40px;   color: white;  text-transform: uppercase; }
+            .home-p{  font-size: 14px;  color: white;  letter-spacing: 2px;  padding-top: 10px; margin-bottom: 15px; }
+            .home-btn{  width: 160px;  height: 40px;  border: 0; border-radius: 7px; font-size: 14px;
+            font-style: italic;  text-transform: capitalize; cursor: pointer; }
+            .btn2{ background-color: rgba(216, 193, 165, 0.838); margin-left: 12px; }
+            .home-btn:hover{  opacity: 0.5;  }
+            .Search{ position: relative; width:255px ; height: 30px; background-color: rgba(255, 255, 255, 0.838);
+            border-radius: 25px; position: absolute; margin-top: 0px; margin-left: -610px;  border: 0;   }
+            .seri{ position: absolute; top: 17px; font-size: 15px; margin-left: -600px;  }
+
+            /*----------------------------------------------SECTION 2-------------------------------------------------------*/
+
+            .parentt{ overflow: auto; width: 100%; height: 100vh; text-transform: capitalize;  }
+            .main{ text-align: center; font-size: 35px; text-transform: capitalize; color: rgb(49, 36, 49);  margin-top: 2em;   } 
+            .line{ width: 127px;  height: 5px; background-color: rgb(165, 131, 98); margin: auto; margin-top: 10px;  margin-bottom: 50px;  }
+            .div1, .div2, .div3 { width: 275px;  height: 200px; border: 1px solid rgb(66, 29, 71);   background-color: white;
+            border-radius: 15px; text-align: center; position: relative; float: left; margin-left: 160px; margin-top: 20px;  }  
+            .i1, .i2, .i3 { color: rgb(167, 119, 80);  font-size: 30px; margin-top: -132px; margin-left: -10px;}
+            .h1, .h2, .h3 { font-size: 14px; color: black; height: 24px;  margin-top: 40px;}
+            .p1, .p2, .p3{ font-size: 16px; }
+            .h3:hover{ color: rgba(24, 69, 69, 0.901);  }
+            .lik1{ text-decoration: none; display: block;  margin-top: 13px; color: rgb(128, 88, 55);  font-style: italic;  }
+            .div1:hover  .h1{  color: rgb(100, 64, 45) }
+            .div1:hover  .p1{  color: rgb(62, 51, 43) }
+            .div1:hover  .lik1{ color: rgb(0, 0, 0) }
+            .div1:hover  .i1{  color: rgb(0, 0, 0) }
+            .div1:after{  content: ""; position: absolute;  height: 0;  width: 0;  top: 0;  left: 0;  background-color: rgb(125, 105, 98);}
+            .div1:hover::after{  width: 100%; height: 100%;   transition: 1s;     opacity: 0.4;}
+            .div2:hover  .h2{ color: rgb(100, 64, 45) }
+            .div2:hover  .p2{    color: rgb(62, 51, 43) }
+            .div2:hover  .lik1{    color: rgb(0, 0, 0) }
+            .div2:hover  .i2{ color: rgb(0, 0, 0) }
+            .div2:after{ content: ""; position: absolute;  height: 0;  width: 0;    top: 0;  left: 0;   background-color: rgb(125, 105, 98);}
+            .div2:hover::after{  width: 100%; height: 100%;  transition: 1s;    opacity: 0.4; }
+            .div3:hover  .h3{ color: rgb(100, 64, 45) }
+            .div3:hover  .p3{  color: rgb(62, 51, 43) }
+            .div3:hover  .lik1{   color: rgb(0, 0, 0) }
+            .div3:hover  .i3{  color: rgb(0, 0, 0) }
+            .div3:after{  content: "";    position: absolute;   height: 0;  width: 0;    top: 0;   left: 0; background-color: rgb(125, 105, 98);   }
+            .div3:hover::after{  width: 100%;  height: 100%; transition: 1s;   opacity: 0.4;  }
+
+         /*----------------------------------------------SECTION 3-------------------------------------------------------*/
+            .sec3{  width: 100%;  background-color: rgba(249, 248, 247, 0.782);  height: 100vh;  overflow: auto;}  
+            .h2sec3{  text-align: center;  padding-top: 40px;    font-size: 38px;   text-transform: capitalize;}
+            .sec3div{ float: left;   margin-left: 250px;  margin-top: 50px; position: relative;}
+            .sec3top1{ width: 100%; height:100%;  background-color:rgba(0, 0, 0, 0.5);  line-height: normal;
+            position: absolute;  top: 0;  left: 0;  z-index: 1;  transition: .1s;  color: #fff;  text-align: center; visibility: hidden;   }
+            .sec3div:hover .sec3top1{ visibility: visible;  opacity: 1; }
+            .sec3icon{ background-color: rgb(235, 189, 161);  width: 42px; height: 32px; padding-top: 6px; text-align: center;
+            color: rgb(255, 255, 255); font-size: 20px;  border-radius: 6px;  }
+            .sec3icon1{   background-color: rgb(235, 189, 161);   width: 42px; height: 32px;  padding-top: 6px;
+            text-align: center;  color: rgb(255, 255, 255);  font-size: 20px;  border-radius: 6px;  }
+            .sec3icons a{  display:inline-block;  position: relative;   top: 51px;}
+            .h3title{ color: rgb(235, 189, 161);  text-transform: uppercase;   font-size: 26px;   padding-top: 30px;  }
+            .sec3span{ position: relative; color: rgb(253, 237, 237);  top: 22px;    }
+            .sec3div2{  float: left;  margin-left: 30px;  margin-top: 50px; position: relative;   }
+            .sec3top2{  width: 100%;  height:100%; background-color:rgba(0, 0, 0, 0.5);  line-height: normal;
+            position: absolute;   top: 0;  left: 0;  z-index: 1; transition: .1s; color: #fff;  text-align: center;  visibility: hidden; }
+            .sec3div2:hover .sec3top2{ visibility: visible; opacity: 1; } 
+            .sec3div3{  float: left;   margin-left: 30px;    margin-top: 50px;   position: relative;}
+            .sec3top3{  width: 100%;   height:100%;   background-color:rgba(0, 0, 0, 0.5);  position: absolute;
+            top: 0;  left: 0; z-index: 1;  transition: .1s; color: #fff; text-align: center;  visibility: hidden; }
+            .sec3div3:hover .sec3top3{  visibility: visible;  opacity: 1;  } 
+            .sec3div4{float: left;    margin-left: 250px; margin-top: 30px; position: relative;  }
+            .sec3top4{  width: 100%;   height:100%;  background-color:rgba(0, 0, 0, 0.5);  position: absolute;
+            top: 0;  left: 0;  z-index: 1;  transition: .1s; color: #fff; text-align: center;   visibility: hidden;  }
+            .sec3div4:hover .sec3top4{  visibility: visible; opacity: 1;  } 
+            .sec3div5{ float: left;   margin-left: 30px;  margin-top: 30px;  position: relative; }
+            .sec3top5{ width: 100%;  height:100%; background-color:rgba(0, 0, 0, 0.5); position: absolute;  top: 0;  left: 0;
+            z-index: 1;  transition: .1s;  color: #fff; text-align: center; visibility: hidden;  }
+            .sec3div5:hover .sec3top5{ visibility: visible;  opacity: 1;}
+            .sec3div6{ float: left;  margin-left: 30px; margin-top: 30px;  position: relative;  } 
+            .sec3top6{ width: 100%; height:100%; background-color:rgba(0, 0, 0, 0.5); position: absolute;
+            top: 0; left: 0; z-index: 1; transition: .1s;  color: #fff; text-align: center;  visibility: hidden;    }
+            .sec3div6:hover .sec3top6{  visibility: visible;  opacity: 1;  }   
+
+            /*--------------------------------------------------------------SECTION 4-----------------------------------------*/ 
+
+            .parent2{ overflow: auto;  width: 100%;  height: 100vh;  text-transform: capitalize;   }
+            .main2{   text-align: center;   font-size: 35px;  text-transform: capitalize;  color: rgb(49, 36, 49);  margin-top: 2em;}
+            .line{  width: 127px;  height: 5px; background-color: rgb(165, 131, 98);  margin: auto;  margin-top: 10px;  margin-bottom: 50px;}
+            .sec4div1, .sec4div2, .sec4div3, .sec4div4, .sec4div5, .sec4div6 { width: 285px; height: 180px;  border: 1px solid rgb(66, 29, 71);
+            background-color: white; border-radius: 15px;  text-align: center;  position: relative; float: left; margin-left: 160px; margin-top: 20px;}
+            .ii1, .ii2, .ii3, .ii4, .ii5, .ii6 { color: rgb(167, 119, 80);  font-size: 27px;  margin-top: -147px;  margin-left: -10px; }
+             .ii5, .ii6 { color: rgb(167, 119, 80); font-size: 27px; margin-top: -130px; margin-left: -10px;  }
+            .s4h1, .s4h2, .s4h3, .s4h4, .s4h5, .s4h6 {  font-size: 18px;color: black;  height: 24px;   margin-top: 36px;  }
+            .s4p1, .s4p2, .s4p3, .s4p4, .s4p5, .s4p6{  font-size: 16px;  }
+            .h3:hover{ color: rgba(24, 69, 69, 0.901);  }
+            .lik1{ text-decoration: none; display: block; margin-top: 13px; color: rgb(128, 88, 55);  font-style: italic;  }
+            .sec4div1:hover  .s4h1{ color: rgb(100, 64, 45) }
+            .sec4div1:hover  .s4p1{ color: rgb(62, 51, 43) }
+            .sec4div1:hover  .ii1{ color: rgb(0, 0, 0) }
+            .sec4div1:after{ content: "";  position: absolute;   height: 0;  width: 0;  top: 0;   left: 0;  background-color: rgba(201, 170, 138, 0.982);}
+            .sec4div1:hover::after{ width: 100%; height: 100%; transition: 1s; opacity: 0.2;}
+            .sec4div2:hover  .s4h2{  color: rgb(100, 64, 45) }
+            .sec4div2:hover  .s4p2{  color: rgb(62, 51, 43) }
+            .sec4div2:hover  .ii2{  color: rgb(0, 0, 0) }
+            .sec4div2:after{ content: "";  position: absolute; height: 0;  width: 0;  top: 0; left: 0; background-color: rgb(125, 105, 98); }
+            .sec4div2:hover::after{  width: 100%;  height: 100%;transition: 1s;  opacity: 0.4; }
+            .sec4div3:hover  .s4h3{ color: rgb(100, 64, 45) }
+            .sec4div3:hover  .s4p3{ color: rgb(62, 51, 43) }
+            .sec4div3:hover  .ii3{ color: rgb(0, 0, 0) }
+            .sec4div3:after{ content: ""; position: absolute; height: 0; width: 0; top: 0; left: 0; background-color: rgb(125, 105, 98); }
+            .sec4div3:hover::after{  width: 100%; height: 100%; transition: 1s;   opacity: 0.4;}
+            .sec4div4:hover  .s4h4{ color: rgb(100, 64, 45) }
+            .sec4div4:hover  .s4p4{ color: rgb(62, 51, 43) }
+            .sec4div4:hover  .ii4{ color: rgb(0, 0, 0) }
+            .sec4div4:after{ content: ""; position: absolute;  height: 0; width: 0;  top: 0; left: 0; background-color: rgb(125, 105, 98); }
+            .sec4div4:hover::after{ width: 100%;height: 100%;  transition: 1s;  opacity: 0.4;}
+            .sec4div5:hover  .s4h5{ color: rgb(100, 64, 45) }
+            .sec4div5:hover  .s4p5{ color: rgb(62, 51, 43) }
+            .sec4div5:hover  .ii5{ color: rgb(0, 0, 0) }
+            .sec4div5:after{ content: ""; position: absolute; height: 0; width: 0;  top: 0;  left: 0; background-color: rgb(125, 105, 98); }
+            .sec4div5:hover::after{  width: 100%;  height: 100%;  transition: 1s;  opacity: 0.4;  }
+            .sec4div6:hover  .s4h6{ color: rgb(100, 64, 45) }
+            .sec4div6:hover  .s4p6{ color: rgb(62, 51, 43) }
+            .sec4div6:hover  .ii6{ color: rgb(0, 0, 0) }
+            .sec4div6:after{ content: "";  position: absolute;   height: 0;  width: 0;  top: 0;  left: 0; background-color: rgb(125, 105, 98); }
+            .sec4div6:hover::after{ width: 100%;  height: 100%; transition: 1s;  opacity: 0.4; } /*/ SECTION 4*/
+
+            /* ------------------------------------------------SECTION 5 ------------------------------------------*/
+
+            .containersec5{ width: 80%;  margin: auto; }
+            .parent3{ height: 100vh;  overflow: auto;  padding-top: -190px; margin-top:-100px;  }
+            .divgroup1{  float: left;  width: 50%;  }
+            .divgroup2{  width: 50%; float: left; padding-left:215px;  }
+            .sec5title{  padding-top: -24x; }
+            .ic{ color: rgb(160, 126, 89);  padding-top: 20px; padding-left: 118px; font-size: 14px;}
+            .s5h{ text-transform: capitalize; font-size: 40px;   padding-left: 120px; padding-top: -9px; color: rgb(164, 111, 90);}
+            .s5hr{ width: 80px;  border: 2px solid rgb(188, 133, 98);  margin-top: 10px;  margin-left: 120px;}
+            .s5p{ color: rgb(59, 59, 64); padding-top: 40px; padding-left: 120px; font-size: 17px; }
+            .sec5lul{ list-style: none;  padding-top: 28px;}
+            .sec5lul li{  margin-left: 3px;  margin-bottom: 16px;  color: rgb(91, 85, 85);  }
+            .sec5sh{  text-align: center;  list-style: none;  }
+            .sec5sh li.a5{background-color: rgb(235, 184, 147); }
+            .sec5sh li{ width: 15px; height: 10px; border-radius: 50%; margin: 10px 4px; display: inline-block;
+                width: 18px; height: 17px; border-radius: 50%;  background-color: rgb(175, 174, 174); }
+            .sec5sh li:hover{ background-color: rgb(174, 130, 100); }
+
+        /* ----------------------------------------------------------SECTION 6---------------------------------------------------------*/
+
+            .parent4{ width: 100%; height: 400px; background-image: url(../images/swar6.jpg); position: relative; background-size: cover; background-attachment: fixed; }
+            .overlay {  position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5);}
+            .containersec6{ width: 80%; margin: auto }
+            .sec6icons{   padding-top: 150px;   overflow: auto; }
+            .sec6icon{ float: left;  text-align: center; width: 25% }
+            .sec6-icon{ color: #c3ad9a; margin-bottom: 15px; font-size: 40px; }
+            .sec6-title{ color: #ffffff; font-size: 20px;}
+            .sec6-text{ color: #fff;font-size: 15px;}
+
+             /* ---------------------------------------------------------SECTION 7-----------------------------------------------------*/
+
+
+            .parent5{ overflow: auto;  width: 100%;  height: 100vh; text-transform: capitalize;}
+            .pricingsec{ padding-top: 120px; text-align: center;  }
+            .pri-container{ width: 80%; margin: auto;}
+            .pri-divs{ overflow: auto; padding: 20px;  margin-left: 135px; }
+            .primg-div1{  width: 26%;   border: 1px solid rgb(156, 94, 77);  padding: 30px 18px; float: left;  
+                text-align: center;  border-radius: 10px;  position: relative;}
+            .pricing-title{font-size: 40px;}
+            .d-pri2{   margin: 0 5%;  }
+            .pri-p{ text-transform: uppercase; color: rgb(127, 51, 51);}
+            .pricing-month{ width: 100px;  height: 100px;  border-radius: 50%; border: 2px solid  rgb(174, 130, 100);  margin: 20px auto; padding: 12px 0;}
+            .h3-pricd{font-size: 35px;}
+            .sp-month {text-transform: uppercase; }
+            .pricing-ul,.pricing-btn{ list-style: none;  text-transform: capitalize;}
+            .pricing-ul li{  padding: 10px 0; }
+            .pricing-btn{ width: 170px;height: 30px; border: 2px solid rgb(174, 130, 100);margin-top: 10px; border-radius: 10px;}
+            .hrsec4{ width: 54px; height: 5px; background-color: rgba(158, 145, 139, 0.999); margin: auto; margin-top: 5px;  margin-bottom: 50px; }
+            .primg-div1:after{ position: absolute; content: ""; width: 100%; height: 0; top: 0;  left: 0;  
+                background-color: rgb(222, 203, 184); transition: .5s; opacity: .4; border-radius: 10px; z-index: -1;}
+            .primg-div1:hover:after{ width: 100%;  height: 100%; opacity: 0.5; transition: 0.5s; }
+            .primg-div1:hover .pricing-month  { border: 2px solid black }
+            .primg-div1:hover .pri-p { color: rgb(36, 34, 32); }
+
+
+
+      /* ----------------------------------------------------------SECTION 8------------------------------------------------------------------*/
+            .parent6{  width: 100%;  height: 400px;  background-image: url(../images/swar7.jpg);  position: relative;
+                background-size: cover;  background-attachment: fixed;  margin-top: 130px;}
+            .overlay7 { position: absolute;  width: 100%;  height: 100%; top: 0; left: 0; background-color: rgba(63, 61, 61, 0.5);}
+            .container7{ width: 80%;  margin: auto;}
+            .about7{  margin: auto;  width: 90%;  height: 100%;  overflow: auto;}
+            .name{ color: white;}
+            .work{ color: rgb(239, 217, 199);  }
+            .about-sec1{ width: 50%;  height: 100%; float: left;  }
+            .about-sec1-info{ text-transform: capitalize;  padding: 95px 50px 10px 250px; position: relative;  line-height: 1.4; }
+            .about-sec1-info img{  border-radius: 50%;  width: 115px;  height: 100px;  position: absolute;   left: 124px; top: 71px;}
+            .sec7-p{  margin: 0px 50px 0px 135px;   line-height: 1.5;  margin-top: 23px;  text-transform: capitalize;  color: rgb(238, 235, 235);}
+            .about-item1-info h3{  font-size: 30px;  color: #fff;  }
+            .about-item1-info span{  color: rgb(126, 110, 101);  font-size: 20px;   }
+            .team-title{  padding-top: 120px;   }
+            .team-title h2{  text-align: center;  text-transform: capitalize;  font-size: 40px;    }
+
+      /* ----------------------------------------------------------SECTION 9------------------------------------------------------------------*/
+    
+            .parent7{ overflow: auto;  width: 100%;  height: 100vh; text-transform: capitalize;   }
+            .main-title{   font-size: 28;  text-align: center;  padding: 110px 22px; }
+            .containersec8{ width: 80%; margin: auto; }
+            .team-item{  float: left;   background-color: rgba(200, 193, 165, 0.838);  width: 28%;  padding: 14px  18px; 
+                text-align: center;  position: relative; }
+            .two{  margin: 0px 5%; }
+            .team-image{ width: 90%; margin: auto; position: relative;}
+            .team-image img{  width: 100%; }
+            .team-overlay{ position: absolute; top: 0;  width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);   visibility: hidden; opacity: 0;}
+            .team-item:hover .team-overlay{  visibility: visible;   opacity: 0.5;   transition: 1.5s; }
+            .team-overlay a{ display: block; width: 35px; height: 40px; background-color: rgba(154, 111, 86, 0.838);
+                color: white;  font-size: 22px;  margin-left: auto; }
+            .team-overlay i{    line-height: 40px; }
+            .info-title{  text-transform: uppercase;  padding: 9px 0px; font-size: 21px;   color: rgb(26, 25, 25);}
+            .team-info-span{   font-size: 18px; color: rgb(69, 64, 64); }
+            .team-item:hover  .info-title{  color: white }
+            .team-item:hover  .team-info-span{  color: rgb(131, 106, 87) }
+            .team-item:after{ content: ""; position: absolute;  height: 0; width: 0; top: 0;  left: 0; background-color: black;  transition: 2s; }
+            .team-item:hover::after{   width: 100%;   height: 100%;   opacity: 0.2; }
+            .team-item::before{content: ""; position: absolute; height: 0; width: 0; bottom: 0; right: 0; 
+                background-color: rgb(171, 138, 124);  transition: 2s;  opacity: 1; }
+            .team-item:hover::before{  width: 100%;   height: 100%;    opacity: 0; }
+            .line8{ width: 54px; height: 5px; background-color: rgb(171, 138, 124);  margin: auto;  margin-top: -107px;  margin-bottom: 50px;}
+            
+    /* ----------------------------------------------------------SECTION 10-----------------------------------------------------------------*/
+
+            .parent8{  overflow: auto; width: 100%; height: 100vh; text-transform: capitalize;    }
+            .sec10-title{  margin-top: -500px; text-align: center; text-transform: capitalize; font-size: 30px; }
+            .sec10-container{  width: 80%;   margin: auto;  }
+            .sec10-parent{  height: auto;  margin-top: 50px;   overflow: auto; }
+            .sec10-item{  width: 30%; text-align: center; height: auto;   float: left;
+                border: 1px solid rgb(180, 114, 94);  border-radius: 10px;  position: relative;}
+            .sec10-item:after{  position: absolute; content: "";  width: 100%;  height: 0; top: 0; left: 0;  z-index: -1;
+                background-color: rgb(222, 203, 184); transition: .5s;  opacity: .5; border-radius: 10px; }
+            .sec10-item:hover:after{ width: 100%;  height: 100%;  opacity: 0.5;  transition: 0.5s; }
+            .sec10-item:hover .sec10-icons ul  {  color: rgb(115, 24, 24); }
+            .sec10-item:hover h3{  color: #1f1c1c; }
+            .sec10-item:hover .sec10-icons p { color: rgb(25, 24, 24); }
+            .sec10-icons ul { list-style: none;    }
+            .sec10-icons ul li{    display: inline-block;   margin-right: 15px;   margin-top: 25px;}
+            .sec10-icons h3{  margin: 15px 0px;   }
+            .sec10-icons{  margin-bottom: 15px;   }
+            .sec10-read-more{  text-decoration: none;    color: rgb(41, 33, 30); }
+            .news-icons p{ margin-bottom: 27px; color: rgb(90, 88, 88);}  
+            .news-item img{ border-radius: 10px;  margin-top: 20px;}
+            .si{  margin: 0px 5%;  height: 455px;}
+            .icn{  color: rgb(180, 93, 71); }
+            .par{ color: rgb(180, 93, 71);  height: 65px;}
+            .line9{  width: 54px;  height: 5px; background-color: rgb(171, 138, 124); margin: auto; margin-top: 10px; margin-bottom: 50px;}
+              
+
+   /* ----------------------------------------------------------SECTION 11(FOOTER)--------------------------------------------------------*/
+
+            .footer{ width: 100%;  background-color: rgba(200, 193, 165, 0.838);  padding: 20px 0px;  margin-top: 100px; margin-bottom: 0;  }
+            .fo-content{   margin: auto;  height: 300px;   width: 40%; text-align: center;}
+            .img-fo , .img-fo img{ width:250px; height: 210px; margin: auto;  border-radius: 10px; }
+            .img-fo{ height: 30%; }
+            .ul-fo{ margin-top: 130px;   }
+            .ul-fo ul{ list-style: none; }
+            .ul-fo ul li{ display: inline-block; width: 56px;  height: 55px; border-radius: 50%; padding-top: 10px;
+                            background-color: rgb(165, 131, 98); color: white; font-size: 32px;  position: relative;}
+            .ul-fo p{  font-size: 12px; text-transform: uppercase; color: rgb(86, 84, 84); padding-top: 12px;}      
+            .ul-fo ul li:after{  position: absolute;  content: ""; width: 100%; height: 0;  top: 0; left: 0; 
+                background-color:rgb(179, 179, 245); transition: .5s;  opacity: .5; border-radius: 10px;}
+            .ul-fo ul li:hover{   background-color: #26252b; transition: 0.5s; }
+                        
+
+                   
+
+
+            
+
+
+
+
+
+
+
+
+
+
